@@ -6,9 +6,9 @@ This is a simple 2048 written in C.
 Features
 --------
 
-*Multiple undo (Rotate history).
-*Customizable map size using constant.
-*Customizable percentage of getting 4 using constant.
+* Multiple undo (Rotate history).
+* Customizable map size using constant.
+* Customizable percentage of getting 4 using constant.
 
 Functions
 ---------
@@ -48,6 +48,12 @@ Print the map with step number.
 
 Get valid command.
 Return command code in integer.
+
+Repository
+----------
+
+You may find the source code on [GitHub](https://github.com/KennyTangHK/2048).
+Please feel free to report bugs and contribute your changes.
 
 License
 -------
