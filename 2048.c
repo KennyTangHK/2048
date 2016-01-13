@@ -178,6 +178,10 @@ void do_command(int map[MAP_SIZE][MAP_SIZE], int cmd) {
 	}
 }
 
+/*
+void print_map(int step, int map[MAP_SIZE][MAP_SIZE])
+Print the map with step number.
+*/
 void print_map(int step, int map[MAP_SIZE][MAP_SIZE]) {
 	int i, j;
 
@@ -201,6 +205,11 @@ void print_map(int step, int map[MAP_SIZE][MAP_SIZE]) {
 	printf("|\n\n");
 }
 
+/*
+int get_command()
+Get valid command.
+Return command code in integer.
+*/
 int get_command() {
 	int cmd;
 	while (1) {
@@ -216,7 +225,7 @@ int get_command() {
 }
 
 int main() {
-	srand(time(NULL));
+	srand(time(NULL)); /* reset random seed */
 
 	int map_stack[HISTORY_SIZE][MAP_SIZE][MAP_SIZE];
 	int temp_map[MAP_SIZE][MAP_SIZE]; /* to check cmd with no change */
